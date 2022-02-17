@@ -11,15 +11,15 @@ let ConditionMultiple=()=>
 
     let change=(event)=>
     {
-       setStatus(
-           ...status
-        [event.target.name]= event.target.checked,
-       )
+       setStatus({
+           ...status,
+        [event.target.name]: event.target.checked
+       })
     }
     
     return(
         <React.Fragment>
-            {/* <pre>{JSON.stringify(this.state.user)}</pre>  */}
+            {/* <pre>{JSON.stringify(status)}</pre>  */}
             <div className="container">
                 <div className="card">
                     <div className="card-header">

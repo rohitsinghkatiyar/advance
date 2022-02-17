@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
-import DropdownSelect from './components/2. Show dynamic content/DropdownSelect';
-import Conditionalview from './components/3. Conditional looping/Conditionalview';
-import ConditionOne from './components/3. Conditional looping/ConditionOne';
-import ConditionMultiple from './components/3. Conditional looping/ConditionMultiple';
+import React from 'react';
+
+import Registerform from './components/4.Form Binding/Registerform';
 
 function App() {
   return (
-    <ConditionMultiple/>
+    <React.Fragment>
+      <Registerform/>
+    </React.Fragment>
+   
   );
 }
 
